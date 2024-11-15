@@ -28,18 +28,18 @@ Aplikacja Python służąca do automatycznej konwersji artykułu tekstowego do f
 2. Zainstaluj wymagane biblioteki:
 
 ```bash
-pip3 install openai
+  pip3 install openai
 ```
  
 3. Ustaw zmienną środowiskową OPENAI_API_KEY, wstawiając swój klucz API.
 Na systemie Windows:
 ```bash
-set OPENAI_API_KEY=twój_klucz_api
+  set OPENAI_API_KEY=twój_klucz_api
 ```
 
 Na systemie Linux/Mac:
 ```bash
-export OPENAI_API_KEY=twój_klucz_api
+  export OPENAI_API_KEY=twój_klucz_api
 ```
 
 ### Instrukcja uruchomienia
@@ -47,7 +47,7 @@ export OPENAI_API_KEY=twój_klucz_api
 1. Umieść treść artykułu do konwersji w pliku text.txt.
 2. Uruchom main.py, aby wygenerować pliki HTML:
 ```bash
-python3 main.py
+  python3 main.py
 ```
 3. Po uruchomieniu skryptu zostaną wygenerowane następujące pliki:
 artykul.html: Skonwertowany artykuł w HTML.
