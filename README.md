@@ -67,7 +67,7 @@ podglad.html: Końcowy podgląd artykułu z szablonem CSS, który można otworzy
 - Generowanie treści blogów lub artykułów do wstawienia na strony internetowe.
 - Szybkie tworzenie stron lub dokumentacji z wyjściem w formacie HTML.
 
-##3 Uwagi
+### Uwagi
 
 Pamiętaj, aby nie udostępniać swojego klucza API publicznie.
 Jeśli treść w podglad.html zawiera powtarzające się sekcje lub niepożądane elementy, możesz dostosować prompt w main.py.
