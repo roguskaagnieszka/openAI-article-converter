@@ -1,0 +1,16 @@
+venv/
+.env
+*.env
+
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+.DS_Store
+
+artykul.html
+szablon.html
+podglad.html
+
+*.log
+*.tmp
