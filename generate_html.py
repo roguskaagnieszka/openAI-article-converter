@@ -1,11 +1,9 @@
 import openai
 import re
 
-
 def setup_openai(api_key):
     """Konfiguracja klucza API OpenAI"""
     openai.api_key = api_key
-
 
 def generate_html_from_article(article_text, prompt_text):
     """Generuje HTML z artykułu na podstawie zadanego promptu"""
@@ -21,17 +19,14 @@ def generate_html_from_article(article_text, prompt_text):
     )
     html_content = response.choices[0].message['content'].strip()
 
-    # Ekstrakcja zawartości między znacznikami <body> i </body>
     body_content = re.search(r'<body>(.*?)</body>', html_content, re.DOTALL)
     return body_content.group(1) if body_content else html_content
-
 
 def save_html_to_file(html_content, file_path):
     """Zapisuje zawartość HTML do pliku"""
     with open(file_path, "w", encoding="utf-8") as html_file:
         html_file.write(html_content)
     print(f"Plik HTML został zapisany w: {file_path}")
-
 
 def generate_template_file():
     """Generuje szablon HTML zawierający CSS bez treści artykułu"""
@@ -57,13 +52,11 @@ def generate_template_file():
     save_html_to_file(template_content, "szablon.html")
     print("Szablon HTML został zapisany w pliku szablon.html.")
 
-
 def generate_preview_file(article_html):
     """Generuje pełny podgląd HTML, łącząc artykuł z szablonem"""
     with open("szablon.html", "r", encoding="utf-8") as template_file:
         template_content = template_file.read()
 
-    # Wstawienie artykułu do szablonu
     preview_content = template_content.replace("<!-- Treść artykułu -->", article_html)
 
     save_html_to_file(preview_content, "podglad.html")
