@@ -11,6 +11,7 @@ __pycache__/
 artykul.html
 szablon.html
 podglad.html
+text.html
 
 *.log
 *.tmp

@@ -3,9 +3,12 @@
 Aplikacja Python służąca do automatycznej konwersji artykułu tekstowego do formatu HTML z użyciem OpenAI API. Projekt składa się z trzech głównych modułów: `main.py`, `generate_html.py` oraz pliku tekstowego `text.txt` zawierającego artykuł. Wynikiem działania jest wygenerowany dokument HTML (`artykul.html`) oraz pełny podgląd (`podglad.html`), korzystający z szablonu (`szablon.html`) wzbogaconego o formatowanie CSS.
 
 ### Pliki projektu
-
-- **text.txt**: Plik tekstowy zawierający treść artykułu do konwersji.
 - **main.py**: Główny skrypt zarządzający konwersją i generowaniem plików wynikowych.
+
+#### Pliki wejściowe (do przygotowania przez użytkownika):
+- **text.txt**: Plik tekstowy zawierający treść artykułu do konwersji. Umieść ten plik w katalogu głównym projektu.
+
+#### Pliki generowane automatycznie (podczas działania programu):
 - **generate_html.py**: Moduł zawierający funkcje do konwersji tekstu na HTML z użyciem OpenAI API, generowania szablonu oraz podglądu artykułu.
 - **artykul.html**: Wynikowy plik HTML zawierający skonwertowany artykuł bez stylizacji.
 - **szablon.html**: Szablon HTML z wbudowanym CSS, służący do wizualizacji artykułu.
